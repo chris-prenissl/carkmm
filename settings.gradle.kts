@@ -15,8 +15,7 @@ dependencyResolutionManagement {
 }
 
 rootProject.name = "Car_KMM"
-include(":androidApp")
-include(":androidAuto")
+include(":androidMobile")
 include(":androidAutomotive")
 include(":androidCarCommon:car-app-service")
 include(":shared")

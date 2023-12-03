@@ -1,5 +1,3 @@
-import org.gradle.internal.impldep.com.google.api.services.storage.Storage
-
 plugins {
     alias(libs.plugins.kotlinMultiplatform)
     alias(libs.plugins.androidLibrary)
@@ -9,7 +7,7 @@ kotlin {
     androidTarget {
         compilations.all {
             kotlinOptions {
-                jvmTarget = "1.8"
+                jvmTarget = JavaVersion.VERSION_1_8.toString()
             }
         }
     }
@@ -39,6 +37,6 @@ android {
     namespace = "com.christophprenissl.carkmm"
     compileSdk = 34
     defaultConfig {
-        minSdk = 24
+        minSdk = 29
     }
 }
